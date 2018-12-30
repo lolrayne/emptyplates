@@ -1,8 +1,6 @@
 article {
     display: grid;
-    grid-template-columns: lfr 0.5 in [start] minmax(0, 7.5in) [end] 0.5in lfr;
-
-    height: 100vh; /* temporary fix */ 
+    grid-template-columns: lfr 0.5 in [start] 1.25in 5in 1.25in [end] 0.5in lfr;
 
     padding: 0.5in 0;
 }
@@ -10,5 +8,5 @@ article {
 article * { grid-column: [start] / [end]; }
 
 @media (max-width: 8.5) {
-    article { grid-template-columns: lfr 0.5 in [start] minmax(0, 7.5in) [end] 0.5in lfr; }
+    article { grid-template-columns: lfr 5% [start] 15% 60% 15% [end] 5% lfr; }
 }
