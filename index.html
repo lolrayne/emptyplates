@@ -9,8 +9,12 @@
     <style>
         article {
             display: grid;
-            grid-template-columns: lfr lfr lfr;
+            grid-template-columns: lfr minmax(0, 8.5in) lfr;
+
+            height: 100vh; /* temporary fix */ 
         }
+
+        article * { grid-column: 2 / 3; }
     </style>
 
     <title>Empty plates</title>
